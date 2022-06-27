@@ -1,6 +1,10 @@
 .card-set {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  @include mq(tab) {
+    --card-grid-item: 2;
+  }
 }
 
 .card-set__item {

@@ -24,6 +24,7 @@
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -33,7 +34,7 @@
     width: 480px;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -104,6 +105,12 @@
 .card-set {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .card-set {
+    --card-grid-item: 2;
+  }
 }
 
 .card-set__item {
@@ -696,9 +703,8 @@
 .hero {
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  height: 600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
@@ -707,23 +713,34 @@
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-overlay.jpg);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 696px;
-  color: var(--primary-white-bgcolor);
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  max-width: 360px;
   text-transform: uppercase;
+  color: var(--primary-white-bgcolor);
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
 }
-
-.feature__list {
-  --card-grid-item: 4;
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+  }
 }
 
 .feature__field {
