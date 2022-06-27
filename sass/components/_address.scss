@@ -12,7 +12,10 @@
 }
 
 .adress__contact {
-  margin-top: 9px;
+  margin-top: 8px;
+  @include mq(desc) {
+    margin-top: 8px;
+  }
 
   color: var(--spare-transparency-color);
   @include font(14px, 400, 1.71, 0.03em);

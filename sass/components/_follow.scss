@@ -1,6 +1,9 @@
 .follow {
   display: block;
   text-align: center;
+  @include mq(mob-only) {
+    margin-top: 60px;
+  }
 }
 
 .follow__text {
