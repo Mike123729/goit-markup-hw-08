@@ -771,6 +771,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media (max-width: 767.98px) {
+  .feature__subtitle {
+    text-align: center;
+  }
+}
 
 .feature__text {
   margin-top: 0;
