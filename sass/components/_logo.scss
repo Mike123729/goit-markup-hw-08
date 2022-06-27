@@ -2,11 +2,13 @@
   color: var(--part-logo-color);
 
   font-family: var(--secondary-font-family);
-  @include font(26px, 700, 1.19, 0.03em);
+  @include font(26px, 700, 1.16, 0.03em);
   // font-weight: 700;
   // font-size: 26px;
   // line-height: 1.19;
-
+  @include mq(desc) {
+    line-height: 1.19;
+  }
   text-decoration-line: none;
 }
 

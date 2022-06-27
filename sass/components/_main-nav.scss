@@ -4,8 +4,11 @@
 }
 
 .main-nav__list {
-  display: flex;
-  margin-left: 93px;
+  display: none;
+  @include mq(tab) {
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .main-nav__item {
@@ -26,7 +29,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--primary-text-color);
- @include font(14px, 500, 1.14, 0.02em);
+  @include font(14px, 500, 1.14, 0.02em);
   // font-weight: 500;
   // font-size: 14px;
   // line-height: 1.14;

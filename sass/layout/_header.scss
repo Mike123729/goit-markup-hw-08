@@ -1,5 +1,9 @@
 .header {
   border-bottom: 1px solid var(--border-color);
+  @include mq(mob-only) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .header__container {
