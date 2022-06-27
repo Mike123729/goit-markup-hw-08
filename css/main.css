@@ -17,7 +17,7 @@
   --black-color: #000000;
   --backdrop-color: rgba(0, 0, 0, 0.2);
   --link-transparency-bg: rgba(255, 255, 255, 0.1);
-  --card-grid-item: 4;
+  --card-grid-item: 1;
   --card-grid-width: 30px;
   --main-font-family: "roboto", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
@@ -398,9 +398,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-
-.card-set {
   --card-grid-item: 3;
 }
 
@@ -723,6 +720,10 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+feature__list {
+  --card-grid-item: 4;
 }
 
 .feature__field {
