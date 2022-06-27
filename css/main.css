@@ -271,6 +271,8 @@
 
 .subscribe__button {
   padding: 10px 29px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .connect__button {
@@ -296,6 +298,7 @@
 
 .footer__social-list {
   margin-top: 20px;
+  justify-content: center;
 }
 
 .social__link {
@@ -360,7 +363,8 @@
 }
 
 .follow {
-  margin-left: 70px;
+  display: block;
+  text-align: center;
 }
 
 .follow__text {
@@ -378,8 +382,10 @@
   color: var(--primary-white-bgcolor);
 }
 
-.subscribe {
-  margin-left: 93px;
+@media (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+  }
 }
 
 .subscribe__title {
@@ -389,16 +395,20 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-bgcolor);
+  display: flex;
+  justify-content: center;
 }
 
 .subscribe__form {
   margin-top: 20px;
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribe__input {
   color: var(--primary-white-bgcolor);
-  width: 358px;
+  max-width: 450px;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -944,8 +954,13 @@
 }
 
 .footer__container {
-  display: flex;
   align-items: baseline;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .filter {

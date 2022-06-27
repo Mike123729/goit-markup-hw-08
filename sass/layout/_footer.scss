@@ -5,6 +5,12 @@
 }
 
 .footer__container {
-  display: flex;
+  // display: flex;
   align-items: baseline;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
