@@ -13,8 +13,12 @@
 
 .footer__box {
   display: block;
-  @include mq(noDesck) {
+  @include mq(noDesc) {
     text-align: center;
+  }
+  @include mq(tab-only) {
+    margin-left: auto;
+    margin-right: 165px;
   }
 }
 
@@ -22,8 +26,5 @@
   @include mq(tab) {
     display: flex;
     align-items: baseline;
-  }
-  @include mq(tab-only) {
-    justify-content: space-around;
   }
 }
