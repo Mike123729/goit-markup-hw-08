@@ -1,8 +1,7 @@
 .gallery__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  --card-grid-item: 3;
+  @include mq(desc) {
+    --card-grid-item: 3;
+  }
 }
 
 .gallery__link {

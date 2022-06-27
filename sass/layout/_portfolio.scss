@@ -1,11 +1,15 @@
 .filter {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-
-.filter .filter__item:not(:last-child) {
-  margin-right: 9px;
+  margin-bottom: 40px;
+  @include mq(tab) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @include mq(desc) {
+    margin-bottom: 50px;
+  }
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .filter__btn {

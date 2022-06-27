@@ -480,11 +480,10 @@
   height: 24px;
 }
 
-.gallery__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  --card-grid-item: 3;
+@media (min-width: 1200px) {
+  .gallery__list {
+    --card-grid-item: 3;
+  }
 }
 
 .gallery__link {
@@ -1035,12 +1034,20 @@
 
 .filter {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  gap: 8px;
+  flex-wrap: wrap;
 }
-
-.filter .filter__item:not(:last-child) {
-  margin-right: 9px;
+@media (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__btn {
