@@ -1,0 +1,39 @@
+.work--padding {
+  padding-top: 0;
+}
+
+.work__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.work .card-set {
+  --card-grid-item: 3;
+}
+
+.work__content {
+  position: relative;
+}
+
+.work__overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work__text {
+  margin: 0;
+ @include font(14px, 700, 1.14, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-bgcolor);
+}

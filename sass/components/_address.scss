@@ -1,0 +1,25 @@
+.address {
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  color: var(--primary-white-bgcolor);
+
+  @include font(14px, 400, 1.71, 0.03em);
+  font-style: normal;
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.71;
+}
+
+.adress__contact {
+  margin-top: 9px;
+
+  color: var(--spare-transparency-color);
+  @include font(14px, 400, 1.71, 0.03em);
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.71;
+
+  display: block;
+  text-decoration-line: none;
+}

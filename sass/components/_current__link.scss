@@ -1,0 +1,16 @@
+.current__link {
+  color: var(--hover-text-color);
+
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: "";
+
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: var(--hover-text-color);
+  }
+}

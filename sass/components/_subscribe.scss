@@ -1,0 +1,45 @@
+.subscribe {
+  margin-left: 93px;
+}
+
+.subscribe__title {
+  @include font(14px, 700, 1.14, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-bgcolor);
+}
+
+.subscribe__form {
+  margin-top: 20px;
+  display: flex;
+}
+
+.subscribe__input {
+  color: var(--primary-white-bgcolor);
+  width: 358px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  padding: 15px;
+  margin-right: 12px;
+}
+
+.subscribe__input::placeholder {
+  @include font(16px, 400, 1.25, 0.03em);
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 1.25;
+
+  // letter-spacing: 0.03em;
+
+  color: var(--spare-transparency-color);
+}
+
+.icon__send {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}

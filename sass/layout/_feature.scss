@@ -1,0 +1,36 @@
+.feature__field {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--subordinate--bg-color);
+}
+
+.feature__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.feature__subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  @include font(14px, 700, 1.14, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--secondary-text-color);
+  @include font(14px, 400, 1.71, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.71;
+}
