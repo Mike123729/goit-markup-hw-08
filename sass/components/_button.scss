@@ -37,6 +37,9 @@
   @include mq(noDesc) {
     margin-top: 20px;
   }
+  @include mq(desc) {
+    margin-left: 12px;
+  }
 }
 
 .connect__button {

@@ -5,11 +5,25 @@
 }
 
 .footer__container {
-  // display: flex;
   align-items: baseline;
+  @include mq(desc) {
+    display: flex;
+  }
 }
 
 .footer__box {
   display: block;
-  text-align: center;
+  @include mq(noDesck) {
+    text-align: center;
+  }
+}
+
+.footer__wrap {
+  @include mq(tab) {
+    display: flex;
+    align-items: baseline;
+  }
+  @include mq(tab-only) {
+    justify-content: space-around;
+  }
 }

@@ -1,8 +1,13 @@
 .follow {
   display: block;
-  text-align: center;
+  @include mq(noDesc) {
+    text-align: center;
+  }
   @include mq(mob-only) {
     margin-top: 60px;
+  }
+  @include mq(desc) {
+    margin-left: 70px;
   }
 }
 
