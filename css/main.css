@@ -112,6 +112,11 @@
     --card-grid-item: 2;
   }
 }
+@media (min-width: 1200px) {
+  .card-set {
+    --card-grid-item: 4;
+  }
+}
 
 .card-set__item {
   flex-basis: calc((100% - (var(--card-grid-item) - 1) * var(--card-grid-width)) / var(--card-grid-item));

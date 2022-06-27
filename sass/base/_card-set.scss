@@ -5,6 +5,9 @@
   @include mq(tab) {
     --card-grid-item: 2;
   }
+  @include mq(desc) {
+    --card-grid-item: 4;
+  }
 }
 
 .card-set__item {
