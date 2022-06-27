@@ -4,7 +4,13 @@
 }
 
 .client .card-set {
-  --card-grid-item: 6;
+  --card-grid-item: 2;
+  @include mq(tab) {
+    --card-grid-item: 3;
+  }
+  @include mq(desc) {
+    --card-grid-item: 6;
+  }
 }
 
 .client__link {
@@ -16,7 +22,6 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  width: 170px;
   height: 92px;
 
   border: 1px solid var(--subordinate-color);
