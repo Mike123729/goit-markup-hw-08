@@ -40,10 +40,15 @@
   &.is-open {
     transform: translateX(0);
   }
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 }
 
 .menu-container__social-list {
+  margin-top: 64px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-container__social-link {

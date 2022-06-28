@@ -870,13 +870,18 @@ img {
   transform: translateX(100%);
   background-color: #ffffff;
   transition: transform 250ms linear;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 }
 .menu-container.is-open {
   transform: translateX(0);
 }
 
 .menu-container__social-list {
+  margin-top: 64px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-container__social-link {
