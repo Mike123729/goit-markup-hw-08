@@ -4,11 +4,11 @@
 }
 
 .main-nav__list {
-  @include mq(mob-only) {
-  }
-
   @include mq(tab) {
+    margin-left: 88px;
     display: flex;
+  }
+  @include mq(desc) {
     margin-left: 93px;
   }
 }

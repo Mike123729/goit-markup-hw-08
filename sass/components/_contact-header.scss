@@ -6,10 +6,17 @@
   @include mq(tab) {
     margin-left: auto;
   }
+
+  @include mq(desc) {
+    display: flex;
+  }
 }
 
 .contact__item:not(:last-child) {
-  @include mq(tab) {
+  @include mq(tab-only) {
+    margin-bottom: 10px;
+  }
+  @include mq(desc) {
     margin-right: 30px;
   }
 }
@@ -29,7 +36,7 @@
 .contact__link {
   display: flex;
   align-items: center;
-  @include mq(tab) {
+  @include mq(desc) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
