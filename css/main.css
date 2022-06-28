@@ -548,7 +548,9 @@ img {
 
 .gallery__link {
   text-decoration-line: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -597,6 +599,7 @@ img {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-top: 20px;
+  flex-grow: 1;
   border-bottom: 1px solid var(--border-gallery-color);
   border-right: 1px solid var(--border-gallery-color);
   border-left: 1px solid var(--border-gallery-color);
