@@ -1,5 +1,5 @@
 .contact__list {
-  display: none;
+  // display: none;
   @include mq(tab) {
     display: flex;
     margin-left: auto;

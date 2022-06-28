@@ -1,12 +1,21 @@
 .header {
+  // position: relative;
   border-bottom: 1px solid var(--border-color);
   @include mq(mob-only) {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+  .main-nav__list,
+  .contact__list {
+    @include mq(mob-only) {
+      display: none;
+    }
   }
 }
 
 .header__container {
   display: flex;
   align-items: center;
+  position: relative;
+  justify-content: space-between;
 }

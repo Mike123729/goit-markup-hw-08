@@ -4,7 +4,6 @@
 }
 
 .main-nav__list {
-  display: none;
   @include mq(tab) {
     display: flex;
     margin-left: 93px;
