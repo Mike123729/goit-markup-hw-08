@@ -4,6 +4,9 @@
 }
 
 .main-nav__list {
+  @include mq(mob-only) {
+  }
+
   @include mq(tab) {
     display: flex;
     margin-left: 93px;
@@ -15,20 +18,33 @@
 }
 
 .main-nav__item:not(:last-child) {
-  margin-right: 50px;
+  @include mq(mob-only) {
+    margin-bottom: 32px;
+  }
+
+  @include mq(tab) {
+    margin-right: 50px;
+  }
 }
 
 .main-nav__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
+  @include mq(tab) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--primary-text-color);
-  @include font(14px, 500, 1.14, 0.02em);
+  @include font(40px, 500, 1.17, 0.02em);
+
+  @include mq(tab) {
+    @include font(14px, 500, 1.14, 0.02em);
+  }
   // font-weight: 500;
   // font-size: 14px;
   // line-height: 1.14;
