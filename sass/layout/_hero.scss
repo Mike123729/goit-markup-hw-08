@@ -6,10 +6,7 @@
   // padding-bottom: 200px;
   padding-top: 118px;
   padding-bottom: 118px;
-  @include mq(desc) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+
   // height: 600px;
   max-width: 1600px;
   margin-right: auto;
@@ -18,13 +15,60 @@
   text-align: center;
 
   background-color: var(--spare-bg-color);
+
   background-image: linear-gradient(
-      to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-img-overlay.jpg);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    url(../images/hero/hero-mob.jpg);
+
+  @include mq(retina) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-mob2x.jpg);
+
+    @include mq(tab) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-tab.jpg);
+      @include mq(retina) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/hero/hero-tab2x.jpg);
+      }
+    }
+
+    @include mq(desc) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-desc.jpg);
+      @include mq(retina) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/hero/hero-desc2x.jpg);
+        padding-top: 200px;
+        padding-bottom: 200px;
+      }
+    }
+  }
+
+  // background-image: linear-gradient(
+  //     to right,
+  //     rgba(47, 48, 58, 0.4),
+  //     rgba(47, 48, 58, 0.4)
+  //   ),
+  //   url(../images/hero-img-overlay.jpg);
+  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .hero__title {
