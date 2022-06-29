@@ -45,6 +45,11 @@
 
 .gallery-card__text {
   position: absolute;
+
+  @media screen and (max-width: 380px) {
+    @include font(14px, 400, 1.56, 0.03em);
+  }
+
   @include font(18px, 400, 1.56, 0.03em);
   // font-weight: 400;
   // font-size: 18px;
@@ -53,7 +58,7 @@
   // letter-spacing: 0.03em;
   color: var(--primary-white-bgcolor);
   margin: 0;
-  padding: 63px 24px;
+  padding: 0 24px;
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
