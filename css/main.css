@@ -898,7 +898,8 @@ img {
 }
 
 .menu-container__social-link:not(:last-child) {
-  margin-right: 20px;
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .header {
