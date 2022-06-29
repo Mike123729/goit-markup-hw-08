@@ -894,12 +894,12 @@ img {
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  border-right: 1px solid var(--border-form-color);
 }
 
 .menu-container__social-link:not(:last-child) {
   padding-right: 10px;
   margin-right: 10px;
+  border-right: 1px solid var(--border-form-color);
 }
 
 .header {

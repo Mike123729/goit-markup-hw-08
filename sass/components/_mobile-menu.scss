@@ -54,9 +54,9 @@
 .menu-container__social-link {
   color: var(--hover-text-color);
   @include font(18px, 500, 1.22, 0.02em);
-  border-right: 1px solid var(--border-form-color);
 }
 .menu-container__social-link:not(:last-child) {
   padding-right: 10px;
   margin-right: 10px;
+  border-right: 1px solid var(--border-form-color);
 }
