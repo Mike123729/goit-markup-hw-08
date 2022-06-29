@@ -450,11 +450,6 @@ img {
     margin-top: 60px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199.98px) {
-  .follow {
-    margin-right: auto;
-  }
-}
 @media (min-width: 1200px) {
   .follow {
     margin-left: 70px;
@@ -1159,17 +1154,15 @@ img {
     text-align: center;
   }
 }
-@media (min-width: 768px) and (max-width: 1199.98px) {
-  .footer__box {
-    margin-left: auto;
-    margin-right: 165px;
-  }
-}
-
 @media (min-width: 768px) {
   .footer__wrap {
     display: flex;
     align-items: baseline;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .footer__wrap {
+    justify-content: space-around;
   }
 }
 

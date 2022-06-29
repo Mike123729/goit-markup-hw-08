@@ -6,9 +6,9 @@
   @include mq(mob-only) {
     margin-top: 60px;
   }
-  @include mq(tab-only) {
-    margin-right: auto;
-  }
+  // @include mq(tab-only) {
+  //   margin-right: auto;
+  // }
   @include mq(desc) {
     margin-left: 70px;
   }
