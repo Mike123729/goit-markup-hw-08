@@ -510,7 +510,11 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-bgcolor);
   display: flex;
-  justify-content: center;
+}
+@media (max-width: 1199.98px) {
+  .subscribe__title {
+    justify-content: center;
+  }
 }
 
 .subscribe__form {

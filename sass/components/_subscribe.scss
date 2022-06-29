@@ -15,7 +15,9 @@
   text-transform: uppercase;
   color: var(--primary-white-bgcolor);
   display: flex;
-  justify-content: center;
+  @include mq(noDesc) {
+    justify-content: center;
+  }
 }
 
 .subscribe__form {
