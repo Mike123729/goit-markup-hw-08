@@ -5,6 +5,9 @@
 .form__title {
   margin-bottom: 12px;
   display: block;
+  @media screen and (max-width: 321px) {
+    @include font(14px, 700, 1.2, 0.03em);
+  }
 
   @include font(20px, 700, 1.5, 0.03em);
 
@@ -120,6 +123,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 321px) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
   margin-top: 20px;
   margin-bottom: 30px;
   @include font(12px, 400, 1.16, 0.03em);
