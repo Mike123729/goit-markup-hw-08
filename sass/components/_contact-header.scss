@@ -27,7 +27,10 @@
     display: block;
     width: 16px;
     height: 12px;
-    margin-right: 10px;
+    margin-right: 8px;
+    @include mq(desc) {
+      margin-right: 10px;
+    }
 
     fill: currentColor;
   }
@@ -46,7 +49,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--secondary-text-color);
-  @include font(14px, 500, 1.14, 0.02em);
+  @include font(12px, 500, 1.16, 0.02em);
+
+  @include mq(desc) {
+    @include font(14px, 500, 1.14, 0.02em);
+  }
   // font-weight: 500;
   // font-size: 14px;
   // line-height: 1.14;
@@ -61,10 +68,16 @@
 
 .contact__link.phone {
   color: var(--hover-text-color);
-  @include font(34px, 500, 1.76, 0.02em);
+  @include font(34px, 500, 1.17, 0.02em);
 }
 
 .contact__link.mail {
   color: var(--secondary-text-color);
-  @include font(24px, 500, 1.16, 0.02em);
+  @include font(24px, null, null, 0.02em);
+}
+
+.contact__item {
+  @include mq(mob-only) {
+    margin-top: 32px;
+  }
 }
