@@ -53,7 +53,7 @@
 
 .menu-container__social-link {
   color: var(--hover-text-color);
-  @include font(18px, 500, 1.22, 0.02em);
+  @include font(10px, 500, 1.22, 0.02em);
 }
 .menu-container__social-link:not(:last-child) {
   padding-right: 10px;

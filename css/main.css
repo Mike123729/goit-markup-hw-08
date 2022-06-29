@@ -198,7 +198,7 @@ img {
 
 .contact__link.phone {
   color: var(--hover-text-color);
-  font-size: 34px;
+  font-size: 27px;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -931,7 +931,7 @@ img {
 
 .menu-container__social-link {
   color: var(--hover-text-color);
-  font-size: 18px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.02em;
